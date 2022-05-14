@@ -98,16 +98,18 @@ html {
   border-radius: 100px;
   font-size: 20px;
   padding: 10px 10px 10px 10px;
-  background-color: #c8c1dd;
+  background-color: #f57913;
   border: none;
   color: antiquewhite;
   margin-bottom: 20px;
 }
 
 .container .text #clavier .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   cursor: pointer;
-  -webkit-box-shadow: 5px 5px 1px #45458b;
-          box-shadow: 5px 5px 1px #45458b;
+  -webkit-box-shadow: 5px 5px 1px #e99565;
+          box-shadow: 5px 5px 1px #e99565;
 }
 
 .container .text .pos {
@@ -115,7 +117,7 @@ html {
   margin: 0 auto;
   text-align: center;
   padding: 15px 15px 15px 15px;
-  background-color: #8fe4e4;
+  background-color: #f57913;
   border: none;
   border-radius: 15px;
   font-size: 20px;
@@ -124,8 +126,10 @@ html {
 }
 
 .container .text .pos:hover {
-  -webkit-box-shadow: 5px 5px 1px #349287;
-          box-shadow: 5px 5px 1px #349287;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 1px #e99565;
+          box-shadow: 5px 5px 1px #e99565;
 }
 
 footer {
@@ -137,7 +141,12 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   color: #af1919;
-  border-top: 2px solid #ca0000;
+  border-top: 4px solid #ca0000;
+  border-radius: 20px;
+}
+
+footer a {
+  color: white;
 }
 
 @media screen {

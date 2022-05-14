@@ -3,5 +3,9 @@ footer{
     display: flex;
     justify-content: center;
     color: rgb(175, 25, 25);
-    border-top: 2px solid rgb(202, 0, 0);
+    border-top: 4px solid rgb(202, 0, 0);
+    border-radius: 20px;
+    a {
+        color: white;
+    }
 }
