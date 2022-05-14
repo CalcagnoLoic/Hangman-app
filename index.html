@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Loïc Calcagno">
+        <meta name ="description" content="Hangman app">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hangman App</title>
+        <link rel="stylesheet" href="assets/sass/style.css">
+        <link rel="icon" href="assets/img/hangman.png" type="image/png" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <main>
+
+            <div class="container">
+                <h1 class="titre">Hangman</h1>
+            </div>
+
+            <!--Règles du jeu-->
+            <div class="container">
+                <section class="regle">
+                    <h2>Rules :</h2>
+                    <div class="rules_logo">
+                        <div >
+                        <ul>
+                            <li>Welcome to this little game of Hangman</li> 
+                            <li>The rule is simple, find the right word or GAME OVER</li>
+                            <li>You have 8 tries to find the right word</li>
+                            <li>May the force be with you &#x1F609;</li>
+                        </ul>
+                    </div>
+                        <div>
+                            <img src="assets/img/hangman.png" alt="Logo d'un pendu">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+
+            <!--Jeu-->
+            <div class="container">
+                <div class="mauvaisesProp">Wrong proposals : <span id='erreur'> 0 </span> / <span id='erreurMax'> </span></div>
+                <div class="text">
+                    <img id='pendu' src="./assets/img/0.jpg" alt="">
+                    <p>Guess the word : </p>
+                    <p id="messageInfo">The hyphens for the word can be found here</p>
+                    <div id="clavier"></div>
+                    <button class="btn pos" onClick="reset()">Start again</button>
+                </div> 
+            </div>
+        </main>
+
+        <footer class="container">
+            <p>Hangman - 2022 | <a href="">@CalcagnoLoic</a></p>
+        </footer>
+
+        <script src="assets/js/script.js"></script>
+
+    </body>
+</html>

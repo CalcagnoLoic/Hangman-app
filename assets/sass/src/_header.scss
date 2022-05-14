@@ -1,0 +1,34 @@
+//Styles liés au titre
+.titre {
+    text-align: center;
+    color: rgb(31, 25, 25);
+    font-size: 45px;
+}
+
+//Styles liés aux règles
+.regle {
+    margin-bottom: 20px;
+    padding: 20px 20px 50px 50px;
+    color: rgb(31, 25, 25);
+    border-radius: 25px;  
+    font-weight: bolder;
+    font-size: 20px;
+    .rules_logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    h2 {
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    img {
+        padding-top: 70px;
+        height: 100px;
+    }
+    li {
+        list-style-type: none;
+        line-height: 30px;
+    }
+    border-bottom: 4px solid rgb(202, 0, 0);
+}

@@ -1,0 +1,20 @@
+.container{
+    max-width: 1400px;
+}
+
+@font-face {
+    font-family: Uncracked;
+    src: url(/assets\fonts\uncracked-font\UncrackedFreeTrial-X3WjK.otf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(/assets\fonts\Roboto\Roboto-Regular.ttf);
+}
+
+html {
+    background-image: url(/assets/img/background.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+

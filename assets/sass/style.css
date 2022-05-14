@@ -1,0 +1,149 @@
+.container {
+  max-width: 1400px;
+}
+
+@font-face {
+  font-family: Uncracked;
+  src: url(/assets\fonts\uncracked-font\UncrackedFreeTrial-X3WjK.otf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/assets\fonts\Roboto\Roboto-Regular.ttf);
+}
+
+html {
+  background-image: url(/assets/img/background.jpg);
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.titre {
+  text-align: center;
+  color: #1f1919;
+  font-size: 45px;
+}
+
+.regle {
+  margin-bottom: 20px;
+  padding: 20px 20px 50px 50px;
+  color: #1f1919;
+  border-radius: 25px;
+  font-weight: bolder;
+  font-size: 20px;
+  border-bottom: 4px solid #ca0000;
+}
+
+.regle .rules_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.regle h2 {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.regle img {
+  padding-top: 70px;
+  height: 100px;
+}
+
+.regle li {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.container {
+  color: white;
+}
+
+.container .mauvaisesProp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-size: 25px;
+}
+
+.container p {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.container .text img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+  height: 250px;
+}
+
+.container .text #clavier {
+  display: block;
+  margin: 0 auto;
+}
+
+.container .text #clavier .btn {
+  border-radius: 100px;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  background-color: #c8c1dd;
+  border: none;
+  color: antiquewhite;
+  margin-bottom: 20px;
+}
+
+.container .text #clavier .btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 1px #45458b;
+          box-shadow: 5px 5px 1px #45458b;
+}
+
+.container .text .pos {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+  background-color: #8fe4e4;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+
+.container .text .pos:hover {
+  -webkit-box-shadow: 5px 5px 1px #349287;
+          box-shadow: 5px 5px 1px #349287;
+}
+
+footer {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #af1919;
+  border-top: 2px solid #ca0000;
+}
+
+@media screen {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
