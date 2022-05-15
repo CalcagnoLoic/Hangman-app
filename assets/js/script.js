@@ -73,7 +73,7 @@ let jeuGagne = () => {
 //////CODE DANS LE CAS OU ON PERD
 // Fonction permettant de changer l'image du pendu si on se trompe
 let pendu = () => {
-  document.getElementById('pendu').src = './assets/img/' + erreur + '.jpg';
+  document.getElementById('pendu').src = 'assets/img/' + erreur + '.png';
 }
 
 // Fonction mettant à jour le nombre d'erreur
@@ -94,7 +94,7 @@ let jeuPerdu = () => {
 let reset = () => {
   erreur = 0;
   arr = [];
-  document.getElementById('pendu').src = './images/0.jpg';
+  document.getElementById('pendu').src = 'assets/img/0.png';
 
   motAlea();
   tiretMot();
