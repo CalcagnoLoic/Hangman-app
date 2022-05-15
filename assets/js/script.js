@@ -1,3 +1,5 @@
+
+
 // Création du dictionnaire
 let dicoMot = [ "circle", "noise", "cool", "puddle", "biceps", "glider", "fish", "gladiator", "work", "family", "falsify", "massage", "plant", "draw", "spaghetti", "devices", "affair", "leaf", "aluminium", "battery", "atrocity", "caterpillar", "pen", "sauna", "leaf", "unexpected", "venice", "sandwich", "magazines", "sawing", "ornament", "kit", "spoon", "macaroni", "denmark", "passage", "tomato"
 ]
@@ -34,7 +36,7 @@ let clavier = () => {
 // Fonction adaptant le jeu dans le cas où la lettre choisie est correcte ou non
 let jeu = (lettreJouee) => {
   arr.indexOf(lettreJouee) === -1 ? arr.push(lettreJouee) : null;
-  document.getElementById(lettreJouee).setAttribute('disabled', true); //empâche de recliquer sur la lettre
+  document.getElementById(lettreJouee).setAttribute('disabled', true); //empêche de recliquer sur la lettre
   if (reponse.indexOf(lettreJouee) >= 0) {
     //ajout de la lettre + message si le joueur gagne
     tiretMot();
@@ -66,7 +68,7 @@ tiretMot();
 // Fonction générant un message dans le cas où on gagne
 let jeuGagne = () => {
   if (mot === reponse) {
-    alert("Well done!")
+    swal("Good job!", "You found the word successfully! :D", "success");
   }
 }
 
@@ -84,7 +86,7 @@ let erreurs = () => {
 // Fonction générant un message dans le cas où on perd
 let jeuPerdu = () => {
   if (erreur === erreurMax) {
-    alert("Oops, it's lose!")
+    swal("GAME OVER", "Oops, it's loose :( Start again?", "error");
     document.getElementById('messageInfo').innerHTML = 'The answer was : ' + reponse;
   }
 }
